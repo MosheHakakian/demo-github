@@ -1,0 +1,15 @@
+name: manual
+
+on:
+  workflow_dispatch:
+
+jobs:
+  my-job:
+  runs-on: ubuntu-latest
+  steps:
+    - name: check out code
+      uses: actions/checkout@v4
+
+    - name: run somrthing ...
+      run: |
+        echo hello moshe
